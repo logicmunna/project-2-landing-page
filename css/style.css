@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #999;
+    background: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-family: "Playfair Display", serif;
+    font-weight: 500;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: "Roboto Condensed", sans-serif;
+    color: #1a1a1a;
+    font-weight: 500;
+
+}
+
+a{
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+
+
+/* Resusing/Updating code Here */
+.row, .banner-section{
+    width: 100%;
+    float: left;
+}
+
+
+.row::after, .container::after{
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-md-6{
+    width: 50%;
+    float: left;
+}
+
+.banner-section{
+    background: url("../img/bg.png") center top no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.header-section{
+    padding-top: 30px;
+}
+.header-section .nav{
+    text-align: right;
+    padding-top: 2px;
+
+}
+.header-section .nav ul li{
+    display: inline-block;
+    margin-left: 30px;
+}
+
+.header-section .nav ul li a{
+    color: #fff;
+}
+
+.header-section .nav ul li a:hover{
+    color: #00a8ff;
+    box-shadow: 0 10px 20px rgba(0, 153, 255, 0.3);
+}
+
+
+
+.tag-p1{
+    width: 100%;
+    color: #00a8ff;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.tag-h1{
+    color: #fff;
+    font-size: 50px;
+    padding-bottom: 15px;
+    line-height: 55px;
+}
+.tag-p2{
+    color: #d3d3d3;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.banner-buttons a{
+    display: inline-block;
+    padding: 15px 35px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-right: 20px;
+    transition: all 0.4 ease;
+}
+
+.banner-buttons .btn-blue, .like .btn-blue{
+    background-color: #0099ff;
+    color: #ffffff;
+    border: 2px solid #0099ff;
+}
+
+.banner-buttons .btn-transparent, .like .btn-transparent{
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.banner-buttons .btn-blue:hover, .like .btn-blue:hover{
+    background-color: transparent;
+    color: #0099ff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 153, 255, 0.3);
+
+}
+
+.banner-buttons .btn-transparent:hover, .like .btn-transparent:hover{
+    background-color: #0099ff;
+    border-color: #0099ff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 153, 255, 0.3);
+}
+
+.banner-section .banner-inner-img{
+    text-align: right;
+}
+
+.banner-section .banner-inner-img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.banner-content{
+    padding-top: 100px;
+    padding-bottom: 5px;
+}
+
+.product-overview-section .overview{
+    padding-top: 50px;
+    text-align: center;
+}
+.product-overview-section .overview h3{
+    font-size: 30px;
+    padding: 10px 0;
+}
+.tag-p3 {
+    color: #0099ff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.tag-hr1{
+    width: 10%;
+    border: 1px solid #0099ff;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.col-md-12 {
+    width: 100%;  
+    text-align: center;
+}
+
+.col-md-3{
+    width: 25%;
+    float: left;
+    padding: 0 15px;
+}
+.overview-list{
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: all 0.4s ease;
+    border: 1px solid #c1e6ff;
+
+}
+.icon-circle{
+    width: 90px;
+    height: 90px;
+    border: 1px solid #0099ff;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 80px;
+    margin-bottom: 20px;
+
+}
+
+.icon-circle img{
+    max-width: 50px;
+    vertical-align: middle;
+    filter: invert(49%) sepia(85%) saturate(2250%) hue-rotate(185deg) brightness(101%) contrast(105%);
+}
+
+.overview-list h3{
+    font-size: 18px;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.overview-list p{
+    font-size: 14px;
+    color: #999;
+    line-height: 24px;
+}
+
+.overview-list:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 153, 255, 0.3);
+
+}
+.overview-list:hover .icon-circle{
+    background-color: #0099ff;
+    transition: all 0.4s ease;
+}
+
+.overview-list:hover .icon-circle img{
+    filter: brightness(0) invert(1);
+}
+
+.details-section{
+    padding: 80px 0;
+}
+.product-details-info{
+    padding-top: 100px;
+    padding-left: 20px;
+
+}
+.product-details-info h2, .easy-section h2, .pricing-section h2{
+    font-size: 35px;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.product-details-info .device-description .easy-description{
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.device-features-list li{
+    padding-bottom: 5px;
+    color: black;
+}
+
+.device-features-list img{
+    padding-right: 10px;
+}
+
+.easy-section{
+    background: #efefef;
+    padding: 80px 0;
+}
+.easy-section .easy-text{
+    margin-top: 50px;
+}
+
+.pricing-section, .pricing-section-2{
+    padding: 20px 0;
+}
+
+.pricing-section-2{
+    padding-bottom: 50px;
+}
+
+.pricing-section {
+    background: url("../img/Warstwa 8.png") center top no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-section-2 h2{
+    color: black;
+    font-size: 30px;
+    padding: 15px 0;
+}
+
+.pricing-section h2{
+    color: white;
+    font-size: 30px;
+}
+.pricing-section .col-md-12, .pricing-section-2 .col-md-12{
+    padding: 20px;
+}
+
+.tag-h3{
+    color: white;
+}
+
+.author-info{
+    display: flex;
+    padding: 10px 0;
+    align-items: center;
+    gap: 10px;
+}
+
+.author-text{
+    display: flex;
+    flex-direction: column;
+}
+
+.pricing-section .col-md-6{
+    padding-left: 60px;
+    padding-bottom: 100px;
+}
+
+.author-text .designation{
+    color: white;
+}
+
+.author-text .name{
+    font-size: 18px;
+    padding: 5px 0;
+    color: #d5d3d3;
+}
+
+.like{
+    height: 100px;
+    width: 100%;
+    background-color: #1a1a1a;
+}
+.like-text{
+    display: flex;
+    align-items: center;
+
+}
+.like .bold{
+    font-weight: 900;
+    color: white;
+    font-size: 30px;
+    padding: 32px 0;
+}
+
+.like-text h2{
+    color: white;
+    font-size: 30px;
+    padding: 32px 0;
+    font-weight: 200;
+}
+
+.like-buttons{
+    padding: 25px 0;
+    padding-left: 100px;
+}
+
+.like-buttons a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 3px;
+    margin-right: 20px;
+    transition: all 0.4 ease;
+}
+
+.price-package{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+.pricing-card{
+    flex: 1;
+    min-width: 250px;
+    text-align: center;
+    border: 1px solid #eeeeee;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+.pricing-card:hover{
+    transform: translate(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    z-index: 1;
+    border-color: #0084d6;
+}
+
+.plan-name{
+    font-weight: 900;
+    font-size: 16px;
+    padding: 30px 0;
+    color: #333;
+    text-transform: uppercase;
+}
+.plan-price{
+    padding: 30px 0;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+
+}
+.plan-price h2{
+    font-size: 45px;
+    color: #333;
+}
+.plan-price p{
+    font-size: 16px;
+    color: black;
+    margin-top: 5px;
+}
+
+.plan-details{
+    padding: 30px 20px;
+    color: #888;
+    font-size: 14px;
+}
+
+.plan-button{
+    padding: 0 0 30px 0;
+}
+.plan-button button{
+    padding: 10px 25px;
+    border: 1px solid #eeeeee;
+    background: transparent;
+    color: #0084d6;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.pricing-card:hover .plan-button button{
+    background-color: #0084d6;
+    color: white;
+    border: #0084d6;
+}
+
+.active-card .plan-name{
+    color: #0084d6;
+}
+.active-card .plan-price{
+    background-color: #0084d6;
+    border-color: #0084d6;
+}
+.active-card .plan-price h2,
+.active-card .plan-price p{
+    color: white;
+}
+
+.active-card .plan-button button{
+    background-color: #0084d6;
+    color: white;
+    border: #0084d6;
+}
+
+.active-card:hover .plan-button button{
+    background-color: #006bb3;
+}
+
+.contact-us h2{
+    font-size: 30px;
+    padding: 15px 0;
+}
+
+.contact-us{
+    padding-bottom: 30px;
+}
+
+.icon-phone img {
+    max-width: 50px;
+    vertical-align: middle;
+    filter: invert(49%) sepia(85%) saturate(2250%) hue-rotate(185deg) brightness(101%) contrast(105%);
+}
+
+.phone-fax{
+    font-size: 16px;
+    align-items: center;
+}
